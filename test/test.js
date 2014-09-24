@@ -77,6 +77,11 @@ function test4() {
 	});
 }
 
- test3();
+function test5(){
+	var liner = new streams.Liner();
+	require('fs').createReadStream('./node_modules/mongodb/Readme.md').pipe(liner).pipe(process.stdout);
+}
+
+ test4();
 // test2();
 // test3();
